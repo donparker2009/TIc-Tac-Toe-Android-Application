@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zybooks.tictactoe.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="433dp"
+        android:layout_height="433dp"
+        app:layout_constraintBottom_toBottomOf="@+id/game_grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/game_grid"
+        app:srcCompat="@drawable/g_grid" />
+
+    <GridLayout
+        android:id="@+id/game_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/imageButton0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/empty_square" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageViewTurn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTurn"
+        app:srcCompat="@drawable/x_symbol" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
